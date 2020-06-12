@@ -18,14 +18,14 @@
       $pass = md5($pass."gfjkhgksd5894");
 
 
-      $query = ("INSERT INTO `users` (login, pass) VALUES('$login', '$pass')");
+      $query = ("INSERT INTO `users` (login, password) VALUES(".$login.", ".$pass.")");
       if (mysqli_query($link, $query)) {
         $token=bin2hex(random_bytes(32));
-        $query = "UPDATE users SET token = '$token' WHERE login = '$login'";
+        $query = "UPDATE users SET token = ".$token." WHERE login = ".$login;
         $result = mysqli_query($link, $query);
         setcookie('cookie_token', $token);
         setcookie('cookie_create_time', time());
-        header("Location: menu.php");
+        header("Location: /pig/first/menu.php");
         mysqli_close($link);
         die();
         }
