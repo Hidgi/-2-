@@ -10,7 +10,7 @@
      $result = mysqli_query($link, $query);
      for ($i=0; $i<mysqli_num_rows($result); ++$i){
                $acc = mysqli_fetch_row($result);
-               if($login==$acc[0]){
+               if($login=$acc[0]){
              echo 'Такой логин уже занят!<a href="signup.php"style="padding-left: 140px"><h2><strong>Назад</strong></h2> </a>';
              exit();
              }
