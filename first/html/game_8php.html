@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pig: Файл game.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pig
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">My first documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл game.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memItemLeft" align="right" valign="top"><a id="a00ae4fcafb1145f5e968bdf920f83e2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$token</b> =$_COOKIE['cookie_token']</td></tr>
+<tr class="separator:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59a5f7cd609e592c41dc3643efd3c98"><td class="memItemLeft" align="right" valign="top"><a id="af59a5f7cd609e592c41dc3643efd3c98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> =&quot;SELECT login FROM users WHERE token = '$token'&quot;</td></tr>
+<tr class="separator:af59a5f7cd609e592c41dc3643efd3c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memItemLeft" align="right" valign="top"><a id="a112ef069ddc0454086e3d1e6d8d55d07"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> =mysqli_query($link, $query)</td></tr>
+<tr class="separator:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memItemLeft" align="right" valign="top"><a id="a7aa0a7ae82ffcce478f1415262e6c7ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97941710d863131c700f069b109991e"><td class="memItemLeft" align="right" valign="top"><a id="ae97941710d863131c700f069b109991e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$id</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:ae97941710d863131c700f069b109991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58391ea75f2d29d5d708d7050b641c33"><td class="memItemLeft" align="right" valign="top"><a id="a58391ea75f2d29d5d708d7050b641c33"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$status</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a58391ea75f2d29d5d708d7050b641c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5889a3f9f4979f3816a17239eac4fb"><td class="memItemLeft" align="right" valign="top"><a id="acd5889a3f9f4979f3816a17239eac4fb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$user1</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:acd5889a3f9f4979f3816a17239eac4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337da5d73e53692018838c377ec534e2"><td class="memItemLeft" align="right" valign="top">if($user==$user1)&#160;</td><td class="memItemRight" valign="bottom"><b>else</b></td></tr>
+<tr class="separator:a337da5d73e53692018838c377ec534e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c451110445d7722840c96ecdc33010"><td class="memItemLeft" align="right" valign="top"><a id="a77c451110445d7722840c96ecdc33010"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$your_score</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a77c451110445d7722840c96ecdc33010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf70c30c76de980cff533997490e20f"><td class="memItemLeft" align="right" valign="top"><a id="aedf70c30c76de980cff533997490e20f"></a>
+print&#160;</td><td class="memItemRight" valign="bottom"><b>$your_score</b> [0]</td></tr>
+<tr class="separator:aedf70c30c76de980cff533997490e20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a24ea9339b1928141aec817fe61c32"><td class="memItemLeft" align="right" valign="top"><a id="a80a24ea9339b1928141aec817fe61c32"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$opp_name</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a80a24ea9339b1928141aec817fe61c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ffd2c3736c821a57af3cf3a4fccc4f"><td class="memItemLeft" align="right" valign="top"><a id="a97ffd2c3736c821a57af3cf3a4fccc4f"></a>
+print&#160;</td><td class="memItemRight" valign="bottom"><b>$opp_name</b> [0]</td></tr>
+<tr class="separator:a97ffd2c3736c821a57af3cf3a4fccc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238acf064e4ff9c0d7b89f4d91ec6226"><td class="memItemLeft" align="right" valign="top"><a id="a238acf064e4ff9c0d7b89f4d91ec6226"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$your_opps_score</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a238acf064e4ff9c0d7b89f4d91ec6226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661d992c08008df91f1832f99f73024a"><td class="memItemLeft" align="right" valign="top"><a id="a661d992c08008df91f1832f99f73024a"></a>
+print&#160;</td><td class="memItemRight" valign="bottom"><b>$your_opps_score</b> [0]</td></tr>
+<tr class="separator:a661d992c08008df91f1832f99f73024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл игры. token - присваивает переменной cookie. query - выбирает login из таблицы users, при этом сверяет token. $result - выполняет запрос к базе данных. $user - получение строки результирующей таблицы в виде массива. $id - получение строки результирующей таблицы в виде массива. $status - получение строки результирующей таблицы в виде массива. $user1 - получение строки результирующей таблицы в виде массива. else - блок "иначе". $your_score - получение строки результирующей таблицы в виде массива. print $your_score - выводит ваше количество очков. opp_name - получение строки результирующей таблицы в виде массива. print $opp_name -выводит имя противника. $your_opps_score - получение строки результирующей таблицы в виде массива. $print $your_opps_score - выводит количество очков противника. </p>
+</div><h2 class="groupheader">Переменные</h2>
+<a id="a337da5d73e53692018838c377ec534e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337da5d73e53692018838c377ec534e2">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if ( $user==$user1) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">{</div>
+<div class="line">                                $query=<span class="stringliteral">&quot;SELECT score2 FROM games WHERE id = &#39;$id&#39;&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

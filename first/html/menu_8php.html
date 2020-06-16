@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pig: Файл menu.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pig
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">My first documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл menu.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memItemLeft" align="right" valign="top"><a id="a00ae4fcafb1145f5e968bdf920f83e2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$token</b> =$_COOKIE['cookie_token']</td></tr>
+<tr class="separator:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e65cc2faffb311fe560c687e1951fc0"><td class="memItemLeft" align="right" valign="top"><a id="a5e65cc2faffb311fe560c687e1951fc0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> =&quot;SELECT login FROM users WHERE token = '$token'&quot;</td></tr>
+<tr class="separator:a5e65cc2faffb311fe560c687e1951fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memItemLeft" align="right" valign="top"><a id="a112ef069ddc0454086e3d1e6d8d55d07"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> =mysqli_query($link, $query)</td></tr>
+<tr class="separator:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memItemLeft" align="right" valign="top"><a id="a7aa0a7ae82ffcce478f1415262e6c7ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378af9109309daac3db531d20d110f8b"><td class="memItemLeft" align="right" valign="top"><a id="a378af9109309daac3db531d20d110f8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$create_time</b> =$_COOKIE['cookie_create_time']</td></tr>
+<tr class="separator:a378af9109309daac3db531d20d110f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295133822662d1492f236a9585949c32"><td class="memItemLeft" align="right" valign="top"><a id="a295133822662d1492f236a9585949c32"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$re_time</b> =time()-$create_time</td></tr>
+<tr class="separator:a295133822662d1492f236a9585949c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58391ea75f2d29d5d708d7050b641c33"><td class="memItemLeft" align="right" valign="top"><a id="a58391ea75f2d29d5d708d7050b641c33"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$status</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a58391ea75f2d29d5d708d7050b641c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9199e3f7fab4b67d6110e2a9c1ff5206"><td class="memItemLeft" align="right" valign="top">if($status[0]==1 OR $status[0]==2)&#160;</td><td class="memItemRight" valign="bottom"><b>else</b></td></tr>
+<tr class="separator:a9199e3f7fab4b67d6110e2a9c1ff5206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81801d3324814f41f9d547a392db641"><td class="memItemLeft" align="right" valign="top"><a id="af81801d3324814f41f9d547a392db641"></a>
+exist&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b></td></tr>
+<tr class="separator:af81801d3324814f41f9d547a392db641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7551f8657750951c878a1d84f78113"><td class="memItemLeft" align="right" valign="top"><a id="ada7551f8657750951c878a1d84f78113"></a>
+print&#160;</td><td class="memItemRight" valign="bottom"><b>Привет</b></td></tr>
+<tr class="separator:ada7551f8657750951c878a1d84f78113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл меню игры. $token - присваивает переменной cookie. $query - выбирает login из таблицы users, при этом сверяет token. $result - выполняет запрос к базе данных. $user - получение строки результирующей таблицы в виде массива. $create_time - присваивает переменной cookie времени. $re_time -получает время. $status - получение строки результирующей таблицы в виде массива. else - блок "иначе". </p>
+</div><h2 class="groupheader">Переменные</h2>
+<a id="a9199e3f7fab4b67d6110e2a9c1ff5206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9199e3f7fab4b67d6110e2a9c1ff5206">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if ( $status[0]==1 OR $status[0]==2) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">{</div>
+<div class="line">        $query=<span class="stringliteral">&quot;DELETE FROM games WHERE user1 = &#39;$user&#39; OR user2 = &#39;$user&#39;&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

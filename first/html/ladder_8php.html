@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pig: Файл ladder.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pig
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">My first documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ladder.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memItemLeft" align="right" valign="top"><a id="a00ae4fcafb1145f5e968bdf920f83e2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$token</b> =$_COOKIE['cookie_token']</td></tr>
+<tr class="separator:a00ae4fcafb1145f5e968bdf920f83e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59a5f7cd609e592c41dc3643efd3c98"><td class="memItemLeft" align="right" valign="top"><a id="af59a5f7cd609e592c41dc3643efd3c98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> =&quot;SELECT login FROM users WHERE token = '$token'&quot;</td></tr>
+<tr class="separator:af59a5f7cd609e592c41dc3643efd3c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memItemLeft" align="right" valign="top"><a id="a112ef069ddc0454086e3d1e6d8d55d07"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> =mysqli_query($link, $query)</td></tr>
+<tr class="separator:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598ca4e71b15a1313ec95f0df1027ca5"><td class="memItemLeft" align="right" valign="top"><a id="a598ca4e71b15a1313ec95f0df1027ca5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> =mysqli_fetch_row($result)</td></tr>
+<tr class="separator:a598ca4e71b15a1313ec95f0df1027ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2ec39e7df3899fa8df9640ec274b03"><td class="memItemLeft" align="right" valign="top"><a id="ace2ec39e7df3899fa8df9640ec274b03"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$rows</b> =mysqli_num_rows($result)</td></tr>
+<tr class="separator:ace2ec39e7df3899fa8df9640ec274b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8876a14058f368335baccf35af4a22b"><td class="memItemLeft" align="right" valign="top"><a id="ae8876a14058f368335baccf35af4a22b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$table</b> =''</td></tr>
+<tr class="separator:ae8876a14058f368335baccf35af4a22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee76323e0cf1a098b03c910c217537ea"><td class="memItemLeft" align="right" valign="top"><a id="aee76323e0cf1a098b03c910c217537ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>for</b> ( $tr=0;$tr&lt; $rows;$tr++) = &quot;INSERT INTO players (login) VALUE ('$user')&quot;</td></tr>
+<tr class="separator:aee76323e0cf1a098b03c910c217537ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл таблицы рейтинга. $token - присваивает переменной cookie. $query - выбирает login из таблицы users, при этом сверяет token. $result - выполняет запрос к базе данных. $user - получение строки результирующей таблицы в виде массива. $rows - получает число рядов в результирующей выборке. $table - создаёт таблицу. for - цикл со счетчиком. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

@@ -1,0 +1,24 @@
+\hypertarget{register_8php}{}\doxysection{Файл register.\+php}
+\label{register_8php}\index{register.php@{register.php}}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{register_8php_afc31993e855f9631572adfedcfe6f34b}\label{register_8php_afc31993e855f9631572adfedcfe6f34b}} 
+{\bfseries \$login} = \$\+\_\+\+P\+O\+ST\mbox{[}\textquotesingle{}login\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{register_8php_a57f597ea5d25e4aa5461002f31328c79}\label{register_8php_a57f597ea5d25e4aa5461002f31328c79}} 
+{\bfseries \$pass} = \$\+\_\+\+P\+O\+ST\mbox{[}\textquotesingle{}pass\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{register_8php_a4dcadbee89ed4c8ead497ce14b67dd23}\label{register_8php_a4dcadbee89ed4c8ead497ce14b67dd23}} 
+{\bfseries \$confirm} =\$\+\_\+\+P\+O\+ST\mbox{[}\textquotesingle{}conf\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{register_8php_af59a5f7cd609e592c41dc3643efd3c98}\label{register_8php_af59a5f7cd609e592c41dc3643efd3c98}} 
+if(\$pass!=\$confirm) {\bfseries \$query} =\char`\"{}S\+E\+L\+E\+CT login F\+R\+OM users\char`\"{}
+\item 
+\mbox{\Hypertarget{register_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{register_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+{\bfseries \$result} = mysqli\+\_\+query(\$link, \$query)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл регистрации. \$login -\/ присваивает переменной значение login. \$pass -\/ присваивает переменной значение pass. \$confirm -\/ присваивает переменной значение conf. \$query -\/ выбирает из таблицы users login. \$result -\/обрабатывает результат запроса. 

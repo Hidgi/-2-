@@ -1,0 +1,64 @@
+\hypertarget{game_8php}{}\doxysection{Файл game.\+php}
+\label{game_8php}\index{game.php@{game.php}}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{game_8php_a00ae4fcafb1145f5e968bdf920f83e2e}\label{game_8php_a00ae4fcafb1145f5e968bdf920f83e2e}} 
+{\bfseries \$token} =\$\+\_\+\+C\+O\+O\+K\+IE\mbox{[}\textquotesingle{}cookie\+\_\+token\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{game_8php_af59a5f7cd609e592c41dc3643efd3c98}\label{game_8php_af59a5f7cd609e592c41dc3643efd3c98}} 
+{\bfseries \$query} =\char`\"{}S\+E\+L\+E\+CT login F\+R\+OM users W\+H\+E\+RE token = \textquotesingle{}\$token\textquotesingle{}\char`\"{}
+\item 
+\mbox{\Hypertarget{game_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{game_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+{\bfseries \$result} =mysqli\+\_\+query(\$link, \$query)
+\item 
+\mbox{\Hypertarget{game_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}\label{game_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}} 
+{\bfseries \$user} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_ae97941710d863131c700f069b109991e}\label{game_8php_ae97941710d863131c700f069b109991e}} 
+{\bfseries \$id} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_a58391ea75f2d29d5d708d7050b641c33}\label{game_8php_a58391ea75f2d29d5d708d7050b641c33}} 
+{\bfseries \$status} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_acd5889a3f9f4979f3816a17239eac4fb}\label{game_8php_acd5889a3f9f4979f3816a17239eac4fb}} 
+{\bfseries \$user1} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+if(\$user==\$user1) {\bfseries else}
+\item 
+\mbox{\Hypertarget{game_8php_a77c451110445d7722840c96ecdc33010}\label{game_8php_a77c451110445d7722840c96ecdc33010}} 
+{\bfseries \$your\+\_\+score} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_aedf70c30c76de980cff533997490e20f}\label{game_8php_aedf70c30c76de980cff533997490e20f}} 
+print {\bfseries \$your\+\_\+score} \mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{game_8php_a80a24ea9339b1928141aec817fe61c32}\label{game_8php_a80a24ea9339b1928141aec817fe61c32}} 
+{\bfseries \$opp\+\_\+name} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_a97ffd2c3736c821a57af3cf3a4fccc4f}\label{game_8php_a97ffd2c3736c821a57af3cf3a4fccc4f}} 
+print {\bfseries \$opp\+\_\+name} \mbox{[}0\mbox{]}
+\item 
+\mbox{\Hypertarget{game_8php_a238acf064e4ff9c0d7b89f4d91ec6226}\label{game_8php_a238acf064e4ff9c0d7b89f4d91ec6226}} 
+{\bfseries \$your\+\_\+opps\+\_\+score} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{game_8php_a661d992c08008df91f1832f99f73024a}\label{game_8php_a661d992c08008df91f1832f99f73024a}} 
+print {\bfseries \$your\+\_\+opps\+\_\+score} \mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл игры. token -\/ присваивает переменной cookie. query -\/ выбирает login из таблицы users, при этом сверяет token. \$result -\/ выполняет запрос к базе данных. \$user -\/ получение строки результирующей таблицы в виде массива. \$id -\/ получение строки результирующей таблицы в виде массива. \$status -\/ получение строки результирующей таблицы в виде массива. \$user1 -\/ получение строки результирующей таблицы в виде массива. else -\/ блок \char`\"{}иначе\char`\"{}. \$your\+\_\+score -\/ получение строки результирующей таблицы в виде массива. print \$your\+\_\+score -\/ выводит ваше количество очков. opp\+\_\+name -\/ получение строки результирующей таблицы в виде массива. print \$opp\+\_\+name -\/выводит имя противника. \$your\+\_\+opps\+\_\+score -\/ получение строки результирующей таблицы в виде массива. \$print \$your\+\_\+opps\+\_\+score -\/ выводит количество очков противника. 
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{game_8php_a337da5d73e53692018838c377ec534e2}\label{game_8php_a337da5d73e53692018838c377ec534e2}} 
+\index{game.php@{game.php}!else@{else}}
+\index{else@{else}!game.php@{game.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily if ( \$user==\$user1) else}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{                                \$query=\textcolor{stringliteral}{"{}SELECT score2 FROM games WHERE id = '\$id'"{}}}
+
+\end{DoxyCode}

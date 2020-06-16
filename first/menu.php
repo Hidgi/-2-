@@ -1,4 +1,16 @@
 <?php
+/**
+     * @file
+     * Файл меню игры.
+     *$token - присваивает переменной cookie.
+     *$query - выбирает login из таблицы users, при этом сверяет token.
+     *$result - выполняет запрос к базе данных.
+     *$user -  получение строки результирующей таблицы в виде массива.
+     *$create_time - присваивает переменной cookie времени.
+     *$re_time -получает время.
+     *$status -  получение строки результирующей таблицы в виде массива.
+     *else - блок "иначе".
+     	*/
    require_once 'database.php';
    $token=$_COOKIE['cookie_token'];
    $query="SELECT login FROM users WHERE token = '$token'";

@@ -1,4 +1,13 @@
 <?php
+     /**
+     * @file
+     * Файл регистрации.
+     *$login - присваивает переменной значение login. 
+     *$pass - присваивает переменной значение pass.
+     *$confirm - присваивает переменной значение conf.
+     *$query - выбирает из таблицы users login.
+     *$result -обрабатывает результат запроса.
+     */
      require_once 'database.php';
      $login = $_POST['login'];
      $pass = $_POST['pass'];

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pig: Файл auth.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pig
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">My first documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл auth.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:afc31993e855f9631572adfedcfe6f34b"><td class="memItemLeft" align="right" valign="top"><a id="afc31993e855f9631572adfedcfe6f34b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$login</b> = $_POST['login']</td></tr>
+<tr class="separator:afc31993e855f9631572adfedcfe6f34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ec2780b52bd1c54d38c2f981c0349f"><td class="memItemLeft" align="right" valign="top"><a id="a12ec2780b52bd1c54d38c2f981c0349f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$pass</b> = $_POST['pass']</td></tr>
+<tr class="separator:a12ec2780b52bd1c54d38c2f981c0349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memItemLeft" align="right" valign="top"><a id="a112ef069ddc0454086e3d1e6d8d55d07"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> = $link-&gt;query(&quot;SELECT * FROM `users` WHERE `login` = '&quot;.$login.&quot;' AND `password` ='&quot;.$pass.&quot;'&quot;)</td></tr>
+<tr class="separator:a112ef069ddc0454086e3d1e6d8d55d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memItemLeft" align="right" valign="top"><a id="a7aa0a7ae82ffcce478f1415262e6c7ea"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = $result-&gt;fetch_assoc()</td></tr>
+<tr class="separator:a7aa0a7ae82ffcce478f1415262e6c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6d0c4bc7824b756158ebff521245c6"><td class="memItemLeft" align="right" valign="top">if(count($user)==0)&#160;</td><td class="memItemRight" valign="bottom"><b>else</b></td></tr>
+<tr class="separator:a8a6d0c4bc7824b756158ebff521245c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59a5f7cd609e592c41dc3643efd3c98"><td class="memItemLeft" align="right" valign="top"><a id="af59a5f7cd609e592c41dc3643efd3c98"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> = &quot;UPDATE users SET token = '&quot;.$token.&quot;' WHERE login = '&quot;.$login.&quot;'&quot;</td></tr>
+<tr class="separator:af59a5f7cd609e592c41dc3643efd3c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл регистрации. $login - присваивает переменной значение login. $pass - присваивает переменной значение pass. $result -обрабатывает результат запроса, где из таблицы users берёт переменные login и password, а после сравнивает с введёнными в предоставленные поля. $user - извлекает результирующий ряд в виде ассоциативного массива. else - блок "иначе". $query - обновляет таблицу users, загружая token и login. </p>
+</div><h2 class="groupheader">Переменные</h2>
+<a id="a8a6d0c4bc7824b756158ebff521245c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6d0c4bc7824b756158ebff521245c6">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if (count( $user)==0) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">                    $token=bin2hex(random_bytes(32))</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

@@ -1,4 +1,16 @@
 <?php
+/**
+     * @file
+     * Файл ожидания.
+     *$token - присваивает переменной cookie.
+     *$query - выбирает login из таблицы users, при этом сверяет token.
+     *$result - выполняет запрос к базе данных.
+     *$user -  получение строки результирующей таблицы в виде массива.
+     *$user2 -  получение строки результирующей таблицы в виде массива.
+     *$user1 -  получение строки результирующей таблицы в виде массива.
+     *else - блок "иначе".
+     *time_on_site - получает время.
+        */
 require_once 'database.php';
 $token=$_COOKIE['cookie_token'];
 $query="SELECT login FROM users WHERE token = '$token'";

@@ -1,0 +1,41 @@
+\hypertarget{auth_8php}{}\doxysection{Файл auth.\+php}
+\label{auth_8php}\index{auth.php@{auth.php}}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{auth_8php_afc31993e855f9631572adfedcfe6f34b}\label{auth_8php_afc31993e855f9631572adfedcfe6f34b}} 
+{\bfseries \$login} = \$\+\_\+\+P\+O\+ST\mbox{[}\textquotesingle{}login\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{auth_8php_a12ec2780b52bd1c54d38c2f981c0349f}\label{auth_8php_a12ec2780b52bd1c54d38c2f981c0349f}} 
+{\bfseries \$pass} = \$\+\_\+\+P\+O\+ST\mbox{[}\textquotesingle{}pass\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{auth_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{auth_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+{\bfseries \$result} = \$link-\/$>$query(\char`\"{}S\+E\+L\+E\+CT $\ast$ F\+R\+OM \`{}users\`{} W\+H\+E\+RE \`{}login\`{} = \textquotesingle{}\char`\"{}.\$login.\char`\"{}\textquotesingle{} A\+ND \`{}password\`{} =\textquotesingle{}\char`\"{}.\$pass.\char`\"{}\textquotesingle{}\char`\"{})
+\item 
+\mbox{\Hypertarget{auth_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}\label{auth_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}} 
+{\bfseries \$user} = \$result-\/$>$fetch\+\_\+assoc()
+\item 
+if(count(\$user)==0) {\bfseries else}
+\item 
+\mbox{\Hypertarget{auth_8php_af59a5f7cd609e592c41dc3643efd3c98}\label{auth_8php_af59a5f7cd609e592c41dc3643efd3c98}} 
+{\bfseries \$query} = \char`\"{}U\+P\+D\+A\+TE users S\+ET token = \textquotesingle{}\char`\"{}.\$token.\char`\"{}\textquotesingle{} W\+H\+E\+RE login = \textquotesingle{}\char`\"{}.\$login.\char`\"{}\textquotesingle{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл регистрации. \$login -\/ присваивает переменной значение login. \$pass -\/ присваивает переменной значение pass. \$result -\/обрабатывает результат запроса, где из таблицы users берёт переменные login и password, а после сравнивает с введёнными в предоставленные поля. \$user -\/ извлекает результирующий ряд в виде ассоциативного массива. else -\/ блок \char`\"{}иначе\char`\"{}. \$query -\/ обновляет таблицу users, загружая token и login. 
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{auth_8php_a8a6d0c4bc7824b756158ebff521245c6}\label{auth_8php_a8a6d0c4bc7824b756158ebff521245c6}} 
+\index{auth.php@{auth.php}!else@{else}}
+\index{else@{else}!auth.php@{auth.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily if (count( \$user)==0) else}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{                    \$token=bin2hex(random\_bytes(32))}
+
+\end{DoxyCode}

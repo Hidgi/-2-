@@ -1,0 +1,30 @@
+\hypertarget{ladder_8php}{}\doxysection{Файл ladder.\+php}
+\label{ladder_8php}\index{ladder.php@{ladder.php}}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ladder_8php_a00ae4fcafb1145f5e968bdf920f83e2e}\label{ladder_8php_a00ae4fcafb1145f5e968bdf920f83e2e}} 
+{\bfseries \$token} =\$\+\_\+\+C\+O\+O\+K\+IE\mbox{[}\textquotesingle{}cookie\+\_\+token\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{ladder_8php_af59a5f7cd609e592c41dc3643efd3c98}\label{ladder_8php_af59a5f7cd609e592c41dc3643efd3c98}} 
+{\bfseries \$query} =\char`\"{}S\+E\+L\+E\+CT login F\+R\+OM users W\+H\+E\+RE token = \textquotesingle{}\$token\textquotesingle{}\char`\"{}
+\item 
+\mbox{\Hypertarget{ladder_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{ladder_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+{\bfseries \$result} =mysqli\+\_\+query(\$link, \$query)
+\item 
+\mbox{\Hypertarget{ladder_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{ladder_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+{\bfseries \$user} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{ladder_8php_ace2ec39e7df3899fa8df9640ec274b03}\label{ladder_8php_ace2ec39e7df3899fa8df9640ec274b03}} 
+{\bfseries \$rows} =mysqli\+\_\+num\+\_\+rows(\$result)
+\item 
+\mbox{\Hypertarget{ladder_8php_ae8876a14058f368335baccf35af4a22b}\label{ladder_8php_ae8876a14058f368335baccf35af4a22b}} 
+{\bfseries \$table} =\textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\Hypertarget{ladder_8php_aee76323e0cf1a098b03c910c217537ea}\label{ladder_8php_aee76323e0cf1a098b03c910c217537ea}} 
+{\bfseries for} ( \$tr=0;\$tr$<$ \$rows;\$tr++) = \char`\"{}I\+N\+S\+E\+RT I\+N\+TO players (login) V\+A\+L\+UE (\textquotesingle{}\$user\textquotesingle{})\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл таблицы рейтинга. \$token -\/ присваивает переменной cookie. \$query -\/ выбирает login из таблицы users, при этом сверяет token. \$result -\/ выполняет запрос к базе данных. \$user -\/ получение строки результирующей таблицы в виде массива. \$rows -\/ получает число рядов в результирующей выборке. \$table -\/ создаёт таблицу. for -\/ цикл со счетчиком. 

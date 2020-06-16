@@ -1,0 +1,52 @@
+\hypertarget{menu_8php}{}\doxysection{Файл menu.\+php}
+\label{menu_8php}\index{menu.php@{menu.php}}
+\doxysubsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{menu_8php_a00ae4fcafb1145f5e968bdf920f83e2e}\label{menu_8php_a00ae4fcafb1145f5e968bdf920f83e2e}} 
+{\bfseries \$token} =\$\+\_\+\+C\+O\+O\+K\+IE\mbox{[}\textquotesingle{}cookie\+\_\+token\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{menu_8php_a5e65cc2faffb311fe560c687e1951fc0}\label{menu_8php_a5e65cc2faffb311fe560c687e1951fc0}} 
+{\bfseries \$query} =\char`\"{}S\+E\+L\+E\+CT login F\+R\+OM users W\+H\+E\+RE token = \textquotesingle{}\$token\textquotesingle{}\char`\"{}
+\item 
+\mbox{\Hypertarget{menu_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{menu_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+{\bfseries \$result} =mysqli\+\_\+query(\$link, \$query)
+\item 
+\mbox{\Hypertarget{menu_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}\label{menu_8php_a7aa0a7ae82ffcce478f1415262e6c7ea}} 
+{\bfseries \$user} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+\mbox{\Hypertarget{menu_8php_a378af9109309daac3db531d20d110f8b}\label{menu_8php_a378af9109309daac3db531d20d110f8b}} 
+{\bfseries \$create\+\_\+time} =\$\+\_\+\+C\+O\+O\+K\+IE\mbox{[}\textquotesingle{}cookie\+\_\+create\+\_\+time\textquotesingle{}\mbox{]}
+\item 
+\mbox{\Hypertarget{menu_8php_a295133822662d1492f236a9585949c32}\label{menu_8php_a295133822662d1492f236a9585949c32}} 
+{\bfseries \$re\+\_\+time} =time()-\/\$create\+\_\+time
+\item 
+\mbox{\Hypertarget{menu_8php_a58391ea75f2d29d5d708d7050b641c33}\label{menu_8php_a58391ea75f2d29d5d708d7050b641c33}} 
+{\bfseries \$status} =mysqli\+\_\+fetch\+\_\+row(\$result)
+\item 
+if(\$status\mbox{[}0\mbox{]}==1 OR \$status\mbox{[}0\mbox{]}==2) {\bfseries else}
+\item 
+\mbox{\Hypertarget{menu_8php_af81801d3324814f41f9d547a392db641}\label{menu_8php_af81801d3324814f41f9d547a392db641}} 
+exist {\bfseries \+\_\+\+\_\+pad0\+\_\+\+\_\+}
+\item 
+\mbox{\Hypertarget{menu_8php_ada7551f8657750951c878a1d84f78113}\label{menu_8php_ada7551f8657750951c878a1d84f78113}} 
+print {\bfseries Привет}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл меню игры. \$token -\/ присваивает переменной cookie. \$query -\/ выбирает login из таблицы users, при этом сверяет token. \$result -\/ выполняет запрос к базе данных. \$user -\/ получение строки результирующей таблицы в виде массива. \$create\+\_\+time -\/ присваивает переменной cookie времени. \$re\+\_\+time -\/получает время. \$status -\/ получение строки результирующей таблицы в виде массива. else -\/ блок \char`\"{}иначе\char`\"{}. 
+
+\doxysubsection{Переменные}
+\mbox{\Hypertarget{menu_8php_a9199e3f7fab4b67d6110e2a9c1ff5206}\label{menu_8php_a9199e3f7fab4b67d6110e2a9c1ff5206}} 
+\index{menu.php@{menu.php}!else@{else}}
+\index{else@{else}!menu.php@{menu.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily if ( \$status\mbox{[}0\mbox{]}==1 OR \$status\mbox{[}0\mbox{]}==2) else}
+
+{\bfseries Инициализатор}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \$query=\textcolor{stringliteral}{"{}DELETE FROM games WHERE user1 = '\$user' OR user2 = '\$user'"{}}}
+
+\end{DoxyCode}

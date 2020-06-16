@@ -1,4 +1,15 @@
 <?php
+/**
+     * @file
+     * Файл выхода.
+     *$token - присваивает переменной cookie.
+     *$query - выбирает login из таблицы users, при этом сверяет token.
+     *$result - выполняет запрос к базе данных.
+     *$user -  получение строки результирующей таблицы в виде массива.
+     *$query - обновляет таблицу players.
+     *$query- обновляет таблицу users.
+      */
+
 	require_once 'database.php';
     if (isset($_COOKIE['cookie_token'])){
        $token=$_COOKIE['cookie_token'];

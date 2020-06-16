@@ -1,4 +1,16 @@
 <?php
+/**
+     * @file
+     * Файл таблицы рейтинга.
+     *$token - присваивает переменной cookie.
+     *$query - выбирает login из таблицы users, при этом сверяет token.
+     *$result - выполняет запрос к базе данных.
+     *$user -  получение строки результирующей таблицы в виде массива.
+     *$rows - получает число рядов в результирующей выборке.
+     *$table - создаёт таблицу.
+     *for - цикл со счетчиком.
+      */
+
     require_once 'database.php';
     $token=$_COOKIE['cookie_token'];
     $query="SELECT login FROM users WHERE token = '$token'";
