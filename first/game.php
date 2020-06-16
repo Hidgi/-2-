@@ -176,7 +176,7 @@ $user1=$user1[0];
                                     $result=mysqli_query($link, $query);
                                     print "Вы вернётесь в меню через 10 секунд";
                                     mysqli_close($link);
-                                    header ('Refresh:10; URL = http://localhost/lab2/menu.php');
+                                    header ('Refresh:10; URL = http://95.217.218.21/pig/first/menu.php');
                                     die();
                                 }
                                 if (($status[0]==3 AND $user!=$user1) OR ($status[0]==4 AND $user==$user1)) {
@@ -209,7 +209,7 @@ $user1=$user1[0];
                                     $result=mysqli_query($link, $query);
                                     print "Вы вернётесь в меню через 10 секунд";
                                     mysqli_close($link);
-                                    header ('Refresh:10; URL = http://localhost/lab2/menu.php');
+                                    header ('Refresh:10; URL = http://95.217.218.21/pig/first/menu.php');
                                     die();
                                 }
                         ?>
